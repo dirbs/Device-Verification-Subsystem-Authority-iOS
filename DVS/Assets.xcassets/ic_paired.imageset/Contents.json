@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icons8-sim-card-30.png",
+      "filename" : "ic_paired_imsi.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-sim-card-60.png",
+      "filename" : "ic_paired_imsi 2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-sim-card-90.png",
+      "filename" : "ic_paired_imsi 3.png",
       "scale" : "3x"
     }
   ],

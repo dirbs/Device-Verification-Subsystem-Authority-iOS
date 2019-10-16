@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icons8-smartphone-tablet-30.png",
+      "filename" : "ic_device_status.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-smartphone-tablet-60.png",
+      "filename" : "ic_device_status 2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-smartphone-tablet-90.png",
+      "filename" : "ic_device_status 3.png",
       "scale" : "3x"
     }
   ],
