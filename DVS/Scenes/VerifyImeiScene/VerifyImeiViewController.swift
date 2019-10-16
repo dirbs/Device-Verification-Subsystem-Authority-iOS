@@ -179,14 +179,6 @@ class VerifyImeiViewController: UIViewController, VerifyImeiDisplayLogic,UITextF
     numberToolbar.sizeToFit()
     imeiTextField.inputAccessoryView = numberToolbar
     
-    
-    
-   
-    
-    
-    
-    
-    
     if(UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft)
     {
         scanButton = UIButton(type: .custom)
@@ -253,25 +245,7 @@ class VerifyImeiViewController: UIViewController, VerifyImeiDisplayLogic,UITextF
         imeiTextField.text = data;
     }
     //Mark:   Make  get String method Method
-    private func getStringFromInfoPlist(key: String) -> String {
-        var resourceFileDictionary: NSDictionary?
-        
-        //Load content of Info.plist into resourceFileDictionary dictionary
-        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
-            resourceFileDictionary = NSDictionary(contentsOfFile: path)
-        }
-        
-        if let resourceFileDictionaryContent = resourceFileDictionary {
-            
-            // Get something from our Info.plist like TykUrl
-            
-            return resourceFileDictionaryContent.object(forKey:key)! as! String
-            
-        }
-        else{
-            return ""
-        }
-    }
+    
     
     //Mark:  Make  submit button click listener Method
     @IBAction func submitButtonClickListener(_ sender: Any) {
@@ -477,11 +451,10 @@ class VerifyImeiViewController: UIViewController, VerifyImeiDisplayLogic,UITextF
         
         
         
-        var keycloakHttp = Http()
         let keycloakConfig = KeycloakConfig(
-            clientId: getStringFromInfoPlist(key: "ClientId"),
-            host: getStringFromInfoPlist(key: "IamURL"),
-            realm: getStringFromInfoPlist(key: "Realm"),
+            clientId: Constants.clientId,
+            host: Constants.iamURL,
+            realm: Constants.realm,
             isOpenIDConnect: true)
         let oauth2Module = AccountManager.addKeycloakAccount(config: keycloakConfig)
        

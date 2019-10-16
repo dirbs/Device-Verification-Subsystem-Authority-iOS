@@ -26,8 +26,8 @@ class LoginWorker
 
         let keycloakConfig = KeycloakConfig(
             clientId: Constants.clientId,
-            host: Constants.IamURL,
-            realm: Constants.Realm,
+            host: Constants.iamURL,
+            realm: Constants.realm,
             isOpenIDConnect: true)
         
         keycloakConfig.webView = KeycloakConfig.WebViewType.safariViewController

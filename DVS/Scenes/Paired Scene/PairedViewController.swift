@@ -424,11 +424,10 @@ class PairedViewController: UIViewController, PairedDisplayLogic,SpreadsheetView
      //Mark: Make logout Method
     func logout()
     {
-        var keycloakHttp = Http()
         let keycloakConfig = KeycloakConfig(
-            clientId: getStringFromInfoPlist(key: "ClientId"),
-            host: getStringFromInfoPlist(key: "IamURL"),
-            realm: getStringFromInfoPlist(key: "Realm"),
+            clientId: Constants.clientId,
+            host: Constants.iamURL,
+            realm: Constants.realm,
             isOpenIDConnect: true)
         let oauth2Module = AccountManager.addKeycloakAccount(config: keycloakConfig)
         

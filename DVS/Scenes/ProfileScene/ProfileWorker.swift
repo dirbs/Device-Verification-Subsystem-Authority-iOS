@@ -40,8 +40,8 @@ class ProfileWorker
         
         let keycloakConfig = KeycloakConfig(
             clientId: Constants.clientId,
-            host: Constants.IamURL,
-            realm: Constants.Realm,
+            host: Constants.iamURL,
+            realm: Constants.realm,
             isOpenIDConnect: true)
         let oauth2Module = AccountManager.addKeycloakAccount(config: keycloakConfig)
 
@@ -57,26 +57,7 @@ class ProfileWorker
         })
         
     }
-    //Mark: getString Method
-    private func getStringFromInfoPlist(key: String) -> String {
-        var resourceFileDictionary: NSDictionary?
-        
-        //Load content of Info.plist into resourceFileDictionary dictionary
-        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
-            resourceFileDictionary = NSDictionary(contentsOfFile: path)
-        }
-        
-        if let resourceFileDictionaryContent = resourceFileDictionary {
-            
-            // Get something from our Info.plist like TykUrl
-            
-            return resourceFileDictionaryContent.object(forKey:key)! as! String
-            
-        }
-        else{
-            return ""
-        }
-    }
+   
     
     
 }

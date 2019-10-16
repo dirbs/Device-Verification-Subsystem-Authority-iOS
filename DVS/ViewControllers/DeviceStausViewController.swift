@@ -607,11 +607,7 @@ class DeviceStausViewController: UIViewController, SpreadsheetViewDataSource {
                 }
                 //TO POPULATE Informative Conditions
                 if let items = json["classification_state"]["informative_conditions"].array {
-                    // inactivity_reasons found in the result
-                    
-//                    self.labels.append("IMEI Per Informational Condition".localized())
-//                    self.labelValues.append("")
-//                    rowToMerge = (labels.count - 1)
+                
                     if items.isEmpty {
                         self.labels.append("N/A".localized())
                         self.labelValues.append("")

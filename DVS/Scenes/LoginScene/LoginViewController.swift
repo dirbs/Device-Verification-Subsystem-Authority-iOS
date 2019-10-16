@@ -168,8 +168,8 @@ func changeLangauge()
         
         let keycloakConfig = KeycloakConfig(
                        clientId: Constants.clientId,
-                       host: Constants.IamURL,
-                        realm: Constants.Realm,
+                       host: Constants.iamURL,
+                        realm: Constants.realm,
                        isOpenIDConnect: true)
         
         
