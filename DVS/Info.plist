@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IamURL</key>
-	<string>ENTER IAM URL HERE</string>
-	<key>Realm</key>
-	<string>ENTER KEYCLOAK REALM NAME HERE</string>
-	<key>ClientId</key>
-	<string>ENTER KEYCLOAK CLIENT ID HERE</string>
-	<key>ApiGatewayUrl</key>
-	<string>ENTER API GATEWAY URL HERE</string>
-	<key>LengthError</key>
-	<string>IMEI must be 14 to 16 characters long</string>
-	<key>InvalidCharacterError</key>
-	<string>IMEI must contain A-F, a-f and 0-9 only</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
