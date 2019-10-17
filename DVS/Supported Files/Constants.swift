@@ -14,10 +14,10 @@
 import Foundation
 
 struct Constants {
-    static var ApiGatewayUrl = "Enter API Gateway URL here"
+    static var apiGatewayUrl = "Enter API Gateway URL here"
      static var  clientId =  "ENter Client ID here"
-     static var  IamURL =  "Enter IAM URL here"
-     static var  Realm =  "Enter Realm here"
+     static var  iamURL =  "Enter IAM URL here"
+     static var  realm =  "Enter Realm here"
      static var  limit =  10
     
 }

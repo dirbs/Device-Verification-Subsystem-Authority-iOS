@@ -68,7 +68,7 @@ class VerifyImeiWorker
         ]
        
        
-       let url = Constants.ApiGatewayUrl
+       let url = Constants.apiGatewayUrl
         
         Alamofire.request(url, method:.post, parameters:parameters, encoding: JSONEncoding.default, headers:headers).responseJSON { response in
             
